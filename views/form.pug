@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h3 New message:
+
+  form(action="/new", method="post")
+    div.form-group
+      label(for='username') Username:
+        input#userName.form-control(type='text',  name='username')
+    div.form-group
+      label(for='msg') Message:
+        textarea#msg.form-control(name="msg", cols="20", rows="5")
+          
+    button.btn.btn-primary(type='submit') Submit
+
+  
