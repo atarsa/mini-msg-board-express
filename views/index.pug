@@ -3,8 +3,12 @@ extends layout
 block content
   h1= title
   
-  div.message
+  div
     each message in messages
-      div= message.user + " " + message.text + " " + message.added
+      div.message_card
+        div.user= message.user 
+        div.msg=  message.text 
+        div.time_added= message.added
 
-  a.button(href="/new") Add new message
+  button
+    a(href="/new") Add new message

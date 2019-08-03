@@ -1,8 +1,59 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
 }
 
+
 a {
-  color: #00B7FF;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+a:visited {
+  color: initial;
+}
+
+button {
+  margin: 20px 0;
+  padding: 10px 15px;
+  background-color: #81c784;
+  border: none;
+}
+
+button:hover {
+  background-color: aed581;
+}
+
+.message_card {
+  margin: 20px 0;
+}
+
+.user {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.message_card .msg {
+  padding: 10px;
+}
+
+.message_card .time_added {
+  font-size: 11px;
+
+}
+
+.form-group {
+  margin: 10px 0;
+  width: 200px;
+}
+
+.form-group label {
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+#userName,
+#msg {
+  width: 200px;
 }
